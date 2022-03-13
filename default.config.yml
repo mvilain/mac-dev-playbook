@@ -1,0 +1,311 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove: []
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/mvilain/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/vilain/dotfiles
+dotfiles_files:
+  - .aliases
+  - .exports
+  - .exrc
+  - .inputrc
+  - .vimrc
+  - .zshrc
+  - robbyrussell.zsh-theme
+  - xero
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autoconf
+  - autoconf-archive
+  - automake
+  - bash
+  - bison
+  - boundary
+  - brotli
+  - ca-certificates
+  - cfssl
+  - cmake-docs
+  - consul
+  - coreutils
+  - curl
+  - dateutils
+  - dc3dd
+  - docker-machine
+  - docutils
+  - envconsul
+  - findutils
+  - fping
+  - gawk
+  - gdbm
+  - gettext
+  - gh
+  - git
+  - gmp
+  - go
+  - go-bindata
+  - helm
+  - htop
+  - intltool
+  - jq
+  - kops
+  - kubernetes-cli
+  - libevent
+  - libidn2
+  - libnghttp2
+  - libpng
+  - libssh2
+  - libtool
+  - libunistring
+  - libusb
+  - libyaml
+  - logrotate
+  - lzip
+  - m4
+  - mcrypt
+  - mhash
+  - minikube
+  - mosh
+  - mpdecimal
+  - mpfr
+  - ncurses
+  - nginx
+  - nmap
+  - nomad
+  - oniguruma
+  - openldap
+  - openssl@1.1
+  - openssl@3
+  - p7zip
+  - packer
+  - pcre
+  - pcre2
+  - pkg-config
+  - popt
+  - protobuf
+  - python@3.10
+  - rbenv
+  - rclone
+  - readline
+  - rtmpdump
+  - ruby-build
+  - ruby@2.7
+  - six
+  - sphinx-doc
+  - sqlite
+  - ssh-copy-id
+  - telnet
+  - telnetd
+  - terraform
+  - terraform-docs
+  - terragrunt
+  - tmux
+  - tnftp
+  - tnftpd
+  - tree
+  - utf8proc
+  - vagrant-completion
+  - vault
+  - watch
+  - waypoint
+  - wget
+  - xz
+  - yamllint
+  - youtube-dl
+  - zsh
+  - zstd
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - a-better-finder-attributes
+  - a-better-finder-rename
+  - alfred
+  - another-redis-desktop-manager
+  - audacity
+  - audiobook-builder
+  - authy
+  - balenaetcher
+  - bitwarden
+  - brave-browser
+  - busycal
+  - busycontacts
+  - cmake
+  - cyberduck
+  - dbeaver-community
+  - default-folder-x
+  - docker
+  - dropbox
+  - etrecheckpro
+  - firefox
+  - fliqlo
+  - fsnotes
+  - github
+  - gitup
+  - google-chrome
+  - google-drive
+  - google-web-designer
+  - gotomeeting
+  - grandperspective
+  - graphicconverter
+  - imazing
+  - intellij-idea
+  - jitsi-meet
+  - joplin
+  - kdiff3
+  - keka
+  - keyboard-maestro
+  - launchcontrol
+  - macfuse
+  - mdimagesizemdimporter
+  - mediahuman-youtube-downloader
+  - meteorologist
+  - microsoft-teams
+  - mullvadvpn
+  - neofinder
+  - ngrok
+  - nvalt
+  - opera
+  - pacifist
+  - puppet-agent-6
+  - qlimagesize
+  - rar
+  - scrivener
+  - signal
+  - skype
+  - steermouse
+  - tg-pro
+  - the-unarchiver
+  - ticktick
+  - tor-browser
+  - torguard
+  - typora
+  - vagrant
+  - veracrypt
+  - vuescan
+  - webex
+  - whatroute
+  - xquartz
+  - xrg
+  - youtube-to-mp3
+  - zenmap
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages:
+  - ansible
+  - ansible-core
+  - ansible-lint
+  - asn1crypto
+  - astroid
+  - certifi
+  - cffi
+  - entrypoints
+  - flake8
+  - importlib-metadata
+  - isort
+  - lazy-object-proxy
+  - mccabe
+  - pip
+  - platformdirs
+  - protobuf
+  - pycodestyle
+  - pycparser
+  - pyflakes
+  - pylint
+  - setuptools
+  - six
+  - toml
+  - typed-ast
+  - typing-extensions
+  - urllib3
+  - wheel
+  - wrapt
+  - xattr
+  - zipp
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "Alignment"
+  - "Ansible"
+  - "AutoFileName"
+  - "BracketHighlighter"
+  - "ChangeQuotes"
+  - "Dockerfile Syntax Highlighting"
+  - "FileDiffs"
+  - "Git"
+  - "GitGutter"
+  - "GitHub Flavored Markdown Preview"
+  - "GitOpenChangedFiles"
+  - "Highlight Trailing Whitespace"
+  - "INI"
+  - "Markdown Extended"
+  - "MarkdownPreview"
+  - "Package Control"
+  - "Pretty JSON"
+  - "Puppet"
+  - "SublimeLinter-contrib-puppet-lint"
+  - "SublimeLinter-contrib-yamllint"
+  - "SublimeLinter"
+  - "Terraform"
+  - "Theme - Brogrammer"
+  - "Theme - Monokai Pro"
+  - "TrailingSpaces"
+  - "Typora Markdown App (OSX)"
+  - "WordCount"
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
