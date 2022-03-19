@@ -144,6 +144,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password-cli
   - a-better-finder-attributes
   - a-better-finder-rename
   - alfred
@@ -160,7 +161,6 @@ homebrew_cask_apps:
   - cyberduck
   - dbeaver-community
   - default-folder-x
-  - docker
   - dropbox
   - etrecheckpro
   - firefox
@@ -200,12 +200,14 @@ homebrew_cask_apps:
   - signal
   - skype
   - steermouse
+  - superduper
   - tg-pro
   - the-unarchiver
   - ticktick
   - tor-browser
   - torguard
   - typora
+  - usenapp
   - vagrant
   - veracrypt
   - vuescan
