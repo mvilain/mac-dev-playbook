@@ -42,6 +42,7 @@ homebrew_installed_packages:
   - autoconf
   - autoconf-archive
   - automake
+  - b2-tools
   - bash
   - bison
   - boundary
