@@ -62,6 +62,7 @@ homebrew_installed_packages:
   - fping
   - gawk
   - gdbm
+  - gdrive
   - gettext
   - gh
   - git
@@ -149,6 +150,7 @@ homebrew_cask_apps:
   - a-better-finder-attributes
   - a-better-finder-rename
   - alfred
+  - anki
   - another-redis-desktop-manager
   - audacity
   - audiobook-builder
@@ -182,6 +184,7 @@ homebrew_cask_apps:
   - kdiff3
   - keka
   - keyboard-maestro
+  - lastpass
   - launchcontrol
   - macfuse
   - mdimagesizemdimporter
@@ -211,6 +214,7 @@ homebrew_cask_apps:
   - usenapp
   - vagrant
   - veracrypt
+  - vlc
   - vuescan
   - webex
   - whatroute
