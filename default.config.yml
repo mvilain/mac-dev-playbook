@@ -204,6 +204,8 @@ homebrew_cask_apps:
   - signal
   - skype
   - steermouse
+  - sublime-merge
+  - sublime-text
   - superduper
   - tg-pro
   - the-unarchiver
