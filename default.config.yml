@@ -291,6 +291,7 @@ sublime_package_control:
   - "Alignment"
   - "Ansible"
   - "AutoFileName"
+  - "BetterJinja2"
   - "BracketHighlighter"
   - "ChangeQuotes"
   - "Dockerfile Syntax Highlighting"
