@@ -66,6 +66,7 @@ homebrew_installed_packages:
   - gettext
   - gh
   - git
+  - git-interactive-rebase-tool
   - gmp
   - go
   - go-bindata
@@ -209,7 +210,6 @@ homebrew_cask_apps:
   - superduper
   - tg-pro
   - the-unarchiver
-  - ticktick
   - tor-browser
   - torguard
   - typora
