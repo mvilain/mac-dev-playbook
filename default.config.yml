@@ -183,7 +183,6 @@ homebrew_cask_apps:
   - kdiff3
   - keka
   - keyboard-maestro
-  - lastpass
   - launchcontrol
   - macfuse
   - mdimagesizemdimporter
@@ -196,7 +195,6 @@ homebrew_cask_apps:
   - nvalt
   - opera
   - pacifist
-  - puppet-agent-6
   - qlimagesize
   - rar
   - scrivener
