@@ -45,7 +45,7 @@ homebrew_installed_packages:
   - b2-tools
   - bash
   - bison
-  - boundary
+  - hashicorp/tap/boundary
   - brotli
   - ca-certificates
   - cfssl
@@ -97,11 +97,11 @@ homebrew_installed_packages:
   - ncurses
   - nginx
   - nmap
-  - nomad
+  - hashicorp/tap/nomad
   - oniguruma
   - openldap
   - openssl@1.1
-  - openssl@3
+  # - openssl@3 
   - p7zip
   - packer
   - pcre
@@ -122,7 +122,7 @@ homebrew_installed_packages:
   - ssh-copy-id
   - telnet
   - telnetd
-  - terraform
+  - hashicorp/tap/terraform
   - terraform-docs
   - terragrunt
   - tmux
@@ -131,9 +131,9 @@ homebrew_installed_packages:
   - tree
   - utf8proc
   - vagrant-completion
-  - vault
+  - hashicorp/tap/vault
   - watch
-  - waypoint
+  - hashicorp/tap/waypoint
   - wget
   - xz
   - yamllint
@@ -144,6 +144,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
