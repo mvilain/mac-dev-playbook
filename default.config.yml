@@ -50,7 +50,7 @@ homebrew_installed_packages:
   - ca-certificates
   - cfssl
   - cmake-docs
-  - consul
+  - hashicorp/tap/consul
   - coreutils
   - curl
   - dateutils
@@ -103,7 +103,7 @@ homebrew_installed_packages:
   - openssl@1.1
   # - openssl@3 
   - p7zip
-  - packer
+  - hashicorp/tap/packer
   - pcre
   - pcre2
   - pkg-config
