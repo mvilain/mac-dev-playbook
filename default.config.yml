@@ -199,12 +199,12 @@ homebrew_cask_apps:
   - qlimagesize
   - rar
   - scrivener
-  - signal
   - skype
   - steermouse
   - sublime-merge
   - sublime-text
   - superduper
+  - sync
   - tg-pro
   - the-unarchiver
   - tor-browser
@@ -272,6 +272,7 @@ pip_packages:
   - typed-ast
   - typing-extensions
   - urllib3
+  - virtualenv
   - wheel
   - wrapt
   - xattr
