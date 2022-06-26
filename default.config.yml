@@ -162,6 +162,7 @@ homebrew_cask_apps:
   - busycal
   - busycontacts
   - cmake
+  - coconutbattery
   - cyberduck
   - dbeaver-community
   - default-folder-x
