@@ -185,6 +185,7 @@ homebrew_cask_apps:
   - kdiff3
   - keka
   - keyboard-maestro
+  - knockknock
   - launchcontrol
   - macfuse
   - mdimagesizemdimporter
@@ -206,6 +207,7 @@ homebrew_cask_apps:
   - sublime-text
   - superduper
   - sync
+  - Taskexplorer
   - tg-pro
   - the-unarchiver
   - tor-browser
@@ -218,6 +220,7 @@ homebrew_cask_apps:
   - vuescan
   - webex
   - whatroute
+  - whatsyoursign
   - xquartz
   - xrg
   - youtube-to-mp3
