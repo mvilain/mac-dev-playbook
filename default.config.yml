@@ -154,6 +154,7 @@ homebrew_cask_apps:
   - alfred
   - anki
   - another-redis-desktop-manager
+  - app-tamer
   - audacity
   - audiobook-builder
   - authy
@@ -170,6 +171,7 @@ homebrew_cask_apps:
   - etrecheckpro
   - firefox
   - fliqlo
+  - forklift
   - github
   - gitup
   - google-chrome
