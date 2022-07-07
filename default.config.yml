@@ -274,6 +274,8 @@ pip_packages:
   - pylint
   - setuptools
   - six
+  - Sphinx
+  - sphinxcontrib-napoleon
   - toml
   - typed-ast
   - typing-extensions
