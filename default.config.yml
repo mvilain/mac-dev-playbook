@@ -136,6 +136,9 @@ homebrew_installed_packages:
   - hashicorp/tap/waypoint
   - wget
   - xz
+  - zsh
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
   - yamllint
   - youtube-dl
   - zsh
@@ -169,6 +172,7 @@ homebrew_cask_apps:
   - default-folder-x
   - dropbox
   - etrecheckpro
+  - exiftool
   - firefox
   - fliqlo
   - forklift
