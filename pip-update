@@ -1,0 +1,81 @@
+#!/bin/bash
+# update python modules 202202.20MeV
+# updated to include virtualenv module 202206.22MeV
+
+[ $EUID -ne 0 ] && echo "not root" && exit
+
+for vers in python3.7 python3.8; do \
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${vers}"
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+	${vers} -m pip install --upgrade \
+		asn1crypto \
+		astroid \
+		certifi \
+		cffi \
+		entrypoints \
+		flake8 \
+		importlib-metadata \
+		isort \
+		lazy-object-proxy \
+		mccabe \
+		pip \
+		platformdirs \
+		protobuf \
+		pycodestyle \
+		pycparser \
+		pyflakes \
+		pylint \
+		setuptools \
+		six \
+		toml \
+		typed-ast \
+		typing-extensions \
+		urllib3 \
+		virtualenv \
+		wheel \
+		wrapt \
+		xattr\
+		zipp
+done
+
+
+# 2/16/22 installed ansible...generated with 
+# # python3.9 -m pip list | awk '!/Package|-----/{printf "\t\t%s \\\n",$1}'
+
+
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python3.9"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+python3.9 -m pip install --upgrade \
+		ansible ansible-core ansible-lint \
+		asn1crypto \
+		astroid \
+		certifi \
+		cffi \
+		entrypoints \
+		flake8 \
+		importlib-metadata \
+		isort \
+		lazy-object-proxy \
+		mccabe \
+		pip \
+		platformdirs \
+		protobuf \
+		pycodestyle \
+		pycparser \
+		pyflakes \
+		pylint \
+		setuptools \
+		Sphinx sphinxcontrib-napoleon \
+		six \
+		toml \
+		typed-ast \
+		typing-extensions \
+		urllib3 \
+		virtualenv \
+		wheel \
+		wrapt \
+		xattr\
+		zipp
+
