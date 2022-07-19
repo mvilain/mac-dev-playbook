@@ -171,6 +171,7 @@ homebrew_cask_apps:
   - dbeaver-community
   - default-folder-x
   - dropbox
+  - eloston-chromium
   - etrecheckpro
   - exiftool
   - firefox
