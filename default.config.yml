@@ -134,6 +134,7 @@ homebrew_installed_packages:
   - hashicorp/tap/vault
   - watch
   - hashicorp/tap/waypoint
+  - webp
   - wget
   - xz
   - zsh
