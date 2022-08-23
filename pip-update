@@ -1,10 +1,11 @@
 #!/bin/bash
 # update python modules 202202.20MeV
 # updated to include virtualenv module 202206.22MeV
+# removed python 3.7 202207.29MeV
 
 [ $EUID -ne 0 ] && echo "not root" && exit
 
-for vers in python3.7 python3.8; do \
+for vers in python3.8; do \
 	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${vers}"
 	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
@@ -78,4 +79,3 @@ python3.9 -m pip install --upgrade \
 		wrapt \
 		xattr\
 		zipp
-
