@@ -317,8 +317,6 @@ sublime_package_control:
   - "GitGutter"
   - "GitHub Flavored Markdown Preview"
   - "GitOpenChangedFiles"
-  - "Gofmt"
-  - "Golang"
   - "Golang Build"
   - "Highlight Trailing Whitespace"
   - "INI"
