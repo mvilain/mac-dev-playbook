@@ -39,6 +39,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - aria2
   - autoconf
   - autoconf-archive
   - automake
@@ -101,7 +102,7 @@ homebrew_installed_packages:
   - oniguruma
   - openldap
   - openssl@1.1
-  # - openssl@3 
+  # - openssl@3
   - p7zip
   - hashicorp/tap/packer
   - pcre
@@ -120,6 +121,7 @@ homebrew_installed_packages:
   - sphinx-doc
   - sqlite
   - ssh-copy-id
+  - staticcheck
   - telnet
   - telnetd
   - hashicorp/tap/terraform
@@ -150,12 +152,13 @@ homebrew_taps:
   - homebrew/cask
   - hashicorp/tap
 
+# alfred 5 works best on MacOS 10.14 even though it installs OK
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password-cli
   - a-better-finder-attributes
   - a-better-finder-rename
-  - alfred
+  # - alfred
   - anki
   - another-redis-desktop-manager
   - app-tamer
@@ -200,13 +203,15 @@ homebrew_cask_apps:
   - mediahuman-youtube-downloader
   - meteorologist
   - microsoft-teams
-  - mullvadvpn
+  # - mullvadvpn
   - neofinder
+  # - netiquette
   - ngrok
   - nvalt
   - opera
   - pacifist
-  - qlimagesize
+  - profind
+  # - qlimagesize
   - rar
   - scrivener
   - skype
@@ -216,6 +221,7 @@ homebrew_cask_apps:
   - superduper
   - sync
   - Taskexplorer
+  - Thunderbird
   - tg-pro
   - the-unarchiver
   - tor-browser
@@ -311,6 +317,9 @@ sublime_package_control:
   - "GitGutter"
   - "GitHub Flavored Markdown Preview"
   - "GitOpenChangedFiles"
+  - "Gofmt"
+  - "Golang"
+  - "Golang Build"
   - "Highlight Trailing Whitespace"
   - "INI"
   - "Jinja2"
@@ -319,9 +328,10 @@ sublime_package_control:
   - "Package Control"
   - "Pretty JSON"
   - "Puppet"
-  - "SublimeLinter-contrib-puppet-lint"
-  - "SublimeLinter-contrib-yamllint"
   - "SublimeLinter"
+  - "SublimeLinter-contrib-puppet-lint"
+  - "SublimeLinter-contrib-staticcheck"
+  - "SublimeLinter-contrib-yamllint"
   - "Terraform"
   - "Theme - Brogrammer"
   - "Theme - Monokai Pro"
