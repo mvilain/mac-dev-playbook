@@ -169,6 +169,7 @@ homebrew_cask_apps:
   - brave-browser
   - busycal
   - busycontacts
+  - chronycontrol
   - cmake
   - coconutbattery
   - cyberduck
