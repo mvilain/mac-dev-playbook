@@ -92,7 +92,6 @@ homebrew_installed_packages:
   - mcrypt
   - mhash
   - minikube
-  - mosh
   - mpdecimal
   - mpfr
   - ncurses
@@ -109,7 +108,6 @@ homebrew_installed_packages:
   - pcre2
   - pkg-config
   - popt
-  - protobuf
   - python@3.10
   - rbenv
   - rclone
