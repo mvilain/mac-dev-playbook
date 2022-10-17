@@ -68,6 +68,7 @@ homebrew_installed_packages:
   - gh
   - git
   - git-interactive-rebase-tool
+  - glances
   - gmp
   - go
   - go-bindata

@@ -2,43 +2,141 @@
 # update python modules 202202.20MeV
 # updated to include virtualenv module 202206.22MeV
 # removed python 3.7 202207.29MeV
+# removed python2.7 upgrade 202210.16MeV
 
 [ $EUID -ne 0 ] && echo "not root" && exit
 
-for vers in python3.8; do \
-	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${vers}"
-	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-	${vers} -m pip install --upgrade \
-		asn1crypto \
-		astroid \
-		certifi \
-		cffi \
-		entrypoints \
-		flake8 \
-		importlib-metadata \
-		isort \
-		lazy-object-proxy \
-		mccabe \
-		pip \
-		platformdirs \
-		protobuf \
-		pycodestyle \
-		pycparser \
-		pyflakes \
-		pylint \
-		setuptools \
-		six \
-		toml \
-		typed-ast \
-		typing-extensions \
-		urllib3 \
-		virtualenv \
-		wheel \
-		wrapt \
-		xattr\
-		zipp
-done
+
+# echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+# echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python2.7"
+# echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+# # dependency errors
+# #   colorama<0.4.4 \
+# #   docutils<0.16 \
+# #   pycodestyle<2.8.0 \
+# #   pyflakes<2.4.0 \
+# python2.7 -m pip install --upgrade \
+#   altgraph \
+#   arrow \
+#   asn1crypto \
+#   astroid \
+#   #awscli \
+#   backports.functools-lru-cache \
+#   backports.ssl-match-hostname \
+#   bcrypt \
+#   bdist-mpkg \
+#   bleach \
+#   boto \
+#   boto3 \
+#   botocore \
+#   certifi \
+#   cffi \
+#   chardet \
+#   colorama
+#   configparser \
+#   cryptography \
+#   cycler \
+#   docker \
+#   docker-pycreds \
+#   docutils
+#   entrypoints \
+#   enum34 \
+#   flake8 \
+#   funcsigs \
+#   functools32 \
+#   futures \
+#   httplib2 \
+#   idna \
+#   ipaddress \
+#   isort \
+#   Jinja2 \
+#   jmespath \
+#   kiwisolver \
+#   lazy-object-proxy \
+#   List \
+#   littleutils \
+#   logfury \
+#   macholib \
+#   MarkupSafe \
+#   matplotlib \
+#   mccabe \
+#   modulegraph \
+#   numpy \
+#   outdated \
+#   packaging \
+#   paramiko \
+#   passlib \
+#   pexpect \
+#   pip \
+#   pkginfo \
+#   ptyprocess \
+#   py2app \
+#   pyasn1 \
+#   pycodestyle
+#   pycparser \
+#   pyflakes \
+#   Pygments \
+#   pylint \
+#   PyNaCl \
+#   pyOpenSSL \
+#   pyparsing \
+#   python-dateutil \
+#   pytz \
+#   PyYAML \
+#   readme-renderer \
+#   requests \
+#   requests-toolbelt \
+#   rsa \
+#   s3transfer \
+#   scipy \
+#   setuptools \
+#   singledispatch \
+#   six \
+#   subprocess32 \
+#   tqdm \
+#   twine \
+#   typing \
+#   urllib3 \
+#   webencodings \
+#   websocket-client \
+#   wheel \
+#   wrapt \
+#   xattr \
+#   zope.interface
+
+
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python3.8"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+python3.8 -m pip install --upgrade \
+  asn1crypto \
+  astroid \
+  certifi \
+  cffi \
+  entrypoints \
+  flake8 \
+  importlib-metadata \
+  isort \
+  lazy-object-proxy \
+  mccabe \
+  pip \
+  platformdirs \
+  protobuf \
+  pycodestyle \
+  pycparser \
+  pyflakes \
+  pylint \
+  setuptools \
+  six \
+  toml \
+  typed-ast \
+  typing-extensions \
+  urllib3 \
+  virtualenv \
+  wheel \
+  wrapt \
+  xattr\
+  zipp
 
 
 # 2/16/22 installed ansible...generated with 
@@ -49,33 +147,33 @@ echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python3.9"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 python3.9 -m pip install --upgrade \
-		ansible ansible-core ansible-lint \
-		asn1crypto \
-		astroid \
-		certifi \
-		cffi \
-		entrypoints \
-		flake8 \
-		importlib-metadata \
-		isort \
-		lazy-object-proxy \
-		mccabe \
-		pip \
-		platformdirs \
-		protobuf \
-		pycodestyle \
-		pycparser \
-		pyflakes \
-		pylint \
-		setuptools \
-		Sphinx sphinxcontrib-napoleon \
-		six \
-		toml \
-		typed-ast \
-		typing-extensions \
-		urllib3 \
-		virtualenv \
-		wheel \
-		wrapt \
-		xattr\
-		zipp
+  ansible ansible-core ansible-lint \
+  asn1crypto \
+  astroid \
+  certifi \
+  cffi \
+  entrypoints \
+  flake8 \
+  importlib-metadata \
+  isort \
+  lazy-object-proxy \
+  mccabe \
+  pip \
+  platformdirs \
+  protobuf \
+  pycodestyle \
+  pycparser \
+  pyflakes \
+  pylint \
+  setuptools \
+  Sphinx sphinxcontrib-napoleon \
+  six \
+  toml \
+  typed-ast \
+  typing-extensions \
+  urllib3 \
+  virtualenv \
+  wheel \
+  wrapt \
+  xattr\
+  zipp
