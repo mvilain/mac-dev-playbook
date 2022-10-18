@@ -10,84 +10,33 @@
 # echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 # echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python2.7"
 # echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-# # dependency errors
-# #   colorama<0.4.4 \
-# #   docutils<0.16 \
-# #   pycodestyle<2.8.0 \
-# #   pyflakes<2.4.0 \
 # python2.7 -m pip install --upgrade \
 #   altgraph \
-#   arrow \
-#   asn1crypto \
 #   astroid \
-#   #awscli \
-#   backports.functools-lru-cache \
 #   backports.ssl-match-hostname \
-#   bcrypt \
 #   bdist-mpkg \
-#   bleach \
-#   boto \
-#   boto3 \
-#   botocore \
 #   certifi \
-#   cffi \
-#   chardet \
-#   colorama
-#   configparser \
-#   cryptography \
+#   contextlib2 \
 #   cycler \
-#   docker \
 #   docker-pycreds \
-#   docutils
 #   entrypoints \
 #   enum34 \
-#   flake8 \
 #   funcsigs \
 #   functools32 \
-#   futures \
-#   httplib2 \
-#   idna \
+#   importlib-metadata \
 #   ipaddress \
-#   isort \
-#   Jinja2 \
-#   jmespath \
 #   kiwisolver \
-#   lazy-object-proxy \
 #   List \
-#   littleutils \
-#   logfury \
 #   macholib \
-#   MarkupSafe \
 #   matplotlib \
 #   mccabe \
 #   modulegraph \
 #   numpy \
-#   outdated \
-#   packaging \
-#   paramiko \
-#   passlib \
-#   pexpect \
 #   pip \
-#   pkginfo \
-#   ptyprocess \
 #   py2app \
-#   pyasn1 \
-#   pycodestyle
-#   pycparser \
-#   pyflakes \
-#   Pygments \
-#   pylint \
-#   PyNaCl \
-#   pyOpenSSL \
 #   pyparsing \
-#   python-dateutil \
 #   pytz \
-#   PyYAML \
-#   readme-renderer \
-#   requests \
-#   requests-toolbelt \
-#   rsa \
-#   s3transfer \
+#   scandir \
 #   scipy \
 #   setuptools \
 #   singledispatch \
@@ -96,12 +45,13 @@
 #   tqdm \
 #   twine \
 #   typing \
-#   urllib3 \
 #   webencodings \
 #   websocket-client \
 #   wheel \
 #   wrapt \
 #   xattr \
+#   yYAML \
+#   zipp \
 #   zope.interface
 
 
@@ -139,7 +89,7 @@ python3.8 -m pip install --upgrade \
   zipp
 
 
-# 2/16/22 installed ansible...generated with 
+# 2/16/22 installed ansible...generated with
 # # python3.9 -m pip list | awk '!/Package|-----/{printf "\t\t%s \\\n",$1}'
 
 
