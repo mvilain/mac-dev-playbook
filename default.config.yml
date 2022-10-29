@@ -90,7 +90,7 @@ homebrew_installed_packages:
   - logrotate
   - lzip
   - m4
-  - mcrypt
+  # - mcrypt  10/28/22 deprecated
   - mhash
   - minikube
   - mpdecimal
@@ -184,13 +184,14 @@ homebrew_cask_apps:
   - github
   - gitup
   - google-chrome
-  - google-drive
+  # - google-drive  # 10/19/22 discontinued 10.13 support on 10/21/22
   - google-web-designer
   - gotomeeting
   - grandperspective
   - graphicconverter
   - imazing
   - intellij-idea
+  - istat-menus
   - jitsi-meet
   - joplin
   - kdiff3
@@ -215,20 +216,19 @@ homebrew_cask_apps:
   - rar
   - scrivener
   - skype
-  - steermouse
+  # - steermouse # 10/19/22 5.6 last version that runs on 10.13
   - sublime-merge
   - sublime-text
   - superduper
   - sync
   - Taskexplorer
-  - Thunderbird
   - tg-pro
   - the-unarchiver
   - tor-browser
   - torguard
   - typora
   - usenapp
-  - vagrant
+  - vagrant # 10/26/22 2.3 doesn't run on 10.13 -- missing gem google-protobuf
   - veracrypt
   - vlc
   - vuescan

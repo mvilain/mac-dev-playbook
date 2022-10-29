@@ -58,6 +58,7 @@
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python3.8"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+# 10/29/22 astroid 2.5.1 requires wrapt<1.13
 python3.8 -m pip install --upgrade \
   asn1crypto \
   astroid \
@@ -84,7 +85,7 @@ python3.8 -m pip install --upgrade \
   urllib3 \
   virtualenv \
   wheel \
-  wrapt \
+  wrapt==1.12 \
   xattr\
   zipp
 
