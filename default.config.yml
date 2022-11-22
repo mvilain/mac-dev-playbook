@@ -43,7 +43,6 @@ homebrew_installed_packages:
   - autoconf
   - autoconf-archive
   - automake
-  - b2-tools
   - bash
   - bison
   - hashicorp/tap/boundary
@@ -141,7 +140,6 @@ homebrew_installed_packages:
   - zsh
   - zsh-syntax-highlighting
   - zsh-autosuggestions
-  - yamllint
   - youtube-dl
   - zsh
   - zstd
@@ -295,6 +293,7 @@ pip_packages:
   - virtualenv
   - wheel
   - wrapt
+  - yamllint
   - xattr
   - zipp
 # - name: mkdocs
