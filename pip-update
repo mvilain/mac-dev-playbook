@@ -4,6 +4,7 @@
 # removed python 3.7 202207.29MeV
 # removed python2.7 upgrade 202210.16MeV
 # added python3.10 and 3.11 installed by brew 202211.05MeV
+# fix permissions on /usr/local/lib/python3.10/site-packages 202212.16
 
 [ $EUID -ne 0 ] && echo "not root" && exit
 
@@ -137,4 +138,5 @@ for ver in python3.10 python3.11; do
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${ver}"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
   ${ver} -m pip install --upgrade certifi pip PyYAML setuptools six wheel virtualenv
+  sudo chown -R vilain:staff /usr/local/lib/${ver}/site-packages
 done
