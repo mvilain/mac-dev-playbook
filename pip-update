@@ -139,7 +139,6 @@ for ver in python3.10 python3.11; do
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
   ${ver} -m pip install --upgrade certifi pip PyYAML setuptools six wheel virtualenv
   for d in /opt/homebrew/lib/${ver}/site-packages /usr/local/lib/${ver}/site-packages; do
-    if [ -e ${d} ]; then
-      sudo chown -R vilain:staff ${d}
-    fi
+    [ -e ${d} ] && sudo chown -R vilain:staff ${d}
+  done
 done
