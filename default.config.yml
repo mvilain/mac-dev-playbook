@@ -156,7 +156,7 @@ homebrew_cask_apps:
   - a-better-finder-attributes
   - a-better-finder-rename
   # - alfred
-  - anki
+  # - anki  2.1.55 requires 10.14
   - another-redis-desktop-manager
   - app-tamer
   - audacity
