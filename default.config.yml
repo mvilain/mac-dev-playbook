@@ -209,7 +209,7 @@ homebrew_cask_apps:
   - nvalt
   - opera
   - pacifist
-  - profind
+  # - profind # 12/24/22 1.8 last version that runs on 10.13
   # - qlimagesize
   - rar
   - scrivener
