@@ -48,6 +48,7 @@ homebrew_installed_packages:
   - brotli
   - ca-certificates
   - cfssl
+  - cmake
   - cmake-docs
   - coreutils
   - curl
@@ -119,6 +120,7 @@ homebrew_installed_packages:
   - rtmpdump
   - ruby-build
   - ruby@2.7
+  - rust
   - six
   - sphinx-doc
   - sqlite
@@ -168,7 +170,7 @@ homebrew_cask_apps:
   # - busycal # bcl-2023.1.3+ requires 10.15
   - busycontacts
   - chronycontrol
-  - cmake
+  # - cmake # don't install the cask
   - coconutbattery
   - cyberduck
   - dbeaver-community
@@ -215,6 +217,7 @@ homebrew_cask_apps:
   - rar
   - scrivener
   - skype
+  - sloth
   # - steermouse # 10/19/22 5.6 last version that runs on 10.13
   - sublime-merge
   - sublime-text
