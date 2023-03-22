@@ -120,6 +120,8 @@ homebrew_installed_packages:
   - rtmpdump
   - ruby-build
   - ruby@2.7
+  # https://forge.rust-lang.org/infra/other-installation-methods.html
+  # - rust # 3/16/23 use 'curl https://sh.rustup.rs -sSf | sh' instead of brew
   - six
   - sphinx-doc
   - sqlite
@@ -142,7 +144,6 @@ homebrew_installed_packages:
   - zsh
   - zsh-syntax-highlighting
   - zsh-autosuggestions
-  - youtube-dl
   - zsh
   - zstd
 
@@ -168,7 +169,7 @@ homebrew_cask_apps:
   - brave-browser
   # - busycal # bcl-2023.1.2 last version that supports 10.13
   - busycontacts
-  - chronycontrol
+  # - chronycontrol # 3/22/23 doesn't start daemons correctly; go back to Apple's time
   # - cmake # don't install the cask
   - coconutbattery
   - cyberduck
