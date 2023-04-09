@@ -74,6 +74,7 @@ for ver in python3.8 python3.9; do
         isort \
         lazy-object-proxy \
         mccabe \
+        packaging \
         pip \
         platformdirs \
         protobuf \
@@ -81,6 +82,7 @@ for ver in python3.8 python3.9; do
         pycparser \
         pyflakes \
         pylint \
+        pytest \
         PyYAML \
         setuptools \
         six \
@@ -95,7 +97,7 @@ for ver in python3.8 python3.9; do
         yamllint \
         xattr\
         zipp
-    ${ver} -m pip uninstall -y dill distlib iniconfig pathspec py pyrsistent pytest PyYAML tomli tomlkit attrs filelock pluggy
+#    ${ver} -m pip uninstall -y dill distlib iniconfig pathspec py pyrsistent pytest PyYAML tomli tomlkit attrs filelock pluggy
 done
 
 # 2/16/22 installed ansible...generated with
