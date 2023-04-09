@@ -5,6 +5,7 @@
 # removed python2.7 upgrade 202210.16MeV
 # added python3.10 and 3.11 installed by brew 202211.05MeV
 # fix permissions on /usr/local/lib/python3.10/site-packages 202212.16
+# added python 3.10.11 as installed as system package 202304.08
 
 [ $EUID -ne 0 ] && echo "not root" && exit
 
@@ -56,84 +57,88 @@
 #   zipp \
 #   zope.interface
 
-
-echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python3.8"
-echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-# 10/29/22 astroid 2.5.1 requires wrapt<1.13
-python3.8 -m pip install --upgrade \
-  asn1crypto \
-  astroid \
-  certifi \
-  cffi \
-  entrypoints \
-  flake8 \
-  importlib-metadata \
-  isort \
-  lazy-object-proxy \
-  mccabe \
-  pip \
-  platformdirs \
-  protobuf \
-  pycodestyle \
-  pycparser \
-  pyflakes \
-  pylint \
-  setuptools \
-  six \
-  toml \
-  typed-ast \
-  typing-extensions \
-  urllib3 \
-  virtualenv \
-  wheel \
-  wrapt==1.12 \
-  yamllint \
-  xattr\
-  zipp
-
+for ver in python3.8 python3.9; do
+    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${ver}"
+    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+    ${ver} -m pip install --upgrade \
+        asn1crypto \
+        astroid \
+        certifi \
+        cffi \
+        dill \
+        entrypoints \
+        filelock \
+        flake8 \
+        importlib-metadata \
+        isort \
+        lazy-object-proxy \
+        mccabe \
+        pip \
+        platformdirs \
+        protobuf \
+        pycodestyle \
+        pycparser \
+        pyflakes \
+        pylint \
+        PyYAML \
+        setuptools \
+        six \
+        toml \
+        tomli \
+        typed-ast \
+        typing-extensions \
+        urllib3 \
+        virtualenv \
+        wheel \
+        wrapt \
+        yamllint \
+        xattr\
+        zipp
+    ${ver} -m pip uninstall -y dill distlib iniconfig pathspec py pyrsistent pytest PyYAML tomli tomlkit attrs filelock pluggy
+done
 
 # 2/16/22 installed ansible...generated with
 # # python3.9 -m pip list | awk '!/Package|-----/{printf "\t\t%s \\\n",$1}'
 
-
+ver=python3.10
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python3.9"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${ver}"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-python3.9 -m pip install --upgrade \
-  ansible ansible-core ansible-lint \
-  asn1crypto \
-  astroid \
-  certifi \
-  cffi \
-  entrypoints \
-  flake8 \
-  importlib-metadata \
-  isort \
-  lazy-object-proxy \
-  mccabe \
-  pip \
-  platformdirs \
-  protobuf \
-  pycodestyle \
-  pycparser \
-  pyflakes \
-  pylint \
-  setuptools \
-  Sphinx sphinxcontrib-napoleon \
-  six \
-  toml \
-  typed-ast \
-  typing-extensions \
-  urllib3 \
-  virtualenv \
-  wheel \
-  wrapt \
-  yamllint \
-  xattr \
-  zipp
+${ver} -m pip install --upgrade \
+    ansible ansible-core ansible-lint \
+    asn1crypto \
+    astroid \
+    certifi \
+    cffi \
+    entrypoints \
+    flake8 \
+    importlib-metadata \
+    isort \
+    lazy-object-proxy \
+    mccabe \
+    pip \
+    platformdirs \
+    protobuf \
+    pycodestyle \
+    pycparser \
+    pyflakes \
+    pylint \
+    setuptools \
+    Sphinx sphinxcontrib-napoleon \
+    six \
+    toml \
+    typed-ast \
+    typing-extensions \
+    urllib3 \
+    virtualenv \
+    wheel \
+    wrapt \
+    yamllint \
+    xattr \
+    zipp
 
-for ver in python3.10 python3.11; do
+for ver in python3.11; do
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${ver}"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
