@@ -70,6 +70,14 @@ homebrew_installed_packages:
   - gmp
   - go
   - go-bindata
+  - hashicorp/tap/boundary
+  - hashicorp/tap/consul
+  - hashicorp/tap/hc-install
+  - hashicorp/tap/nomad
+  - hashicorp/tap/packer
+  - hashicorp/tap/terraform
+  - hashicorp/tap/vault
+  - hashicorp/tap/waypoint
   - helm
   - htop
   - intltool
@@ -96,14 +104,6 @@ homebrew_installed_packages:
   - ncurses
   - nginx
   - nmap
-  - hashicorp/tap/boundary
-  - hashicorp/tap/consul
-  - hashicorp/tap/hc-install
-  - hashicorp/tap/nomad
-  - hashicorp/tap/packer
-  - hashicorp/tap/terraform
-  - hashicorp/tap/vault
-  - hashicorp/tap/waypoint
   - oniguruma
   - openldap
   - openssl@1.1
@@ -119,7 +119,7 @@ homebrew_installed_packages:
   - readline
   - rtmpdump
   - ruby-build
-  - ruby@2.7
+  # - ruby@2.7 # 5/15/23 ruby@2.7 deprecated
   # https://forge.rust-lang.org/infra/other-installation-methods.html
   # - rust # 3/16/23 use 'curl https://sh.rustup.rs -sSf | sh' instead of brew
   - six
@@ -226,6 +226,7 @@ homebrew_cask_apps:
   - Taskexplorer
   - tg-pro
   - the-unarchiver
+  # - ticktick
   - tor-browser
   # - torguard # 3/8/23 4.8.14 last version that supports 10.13; 4.8.15 installs 4.8.14 on 10.13; 4.8.16 just fails
   # - typora # 3/8/23 1.5.8 last version that supports 10.13
