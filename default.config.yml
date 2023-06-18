@@ -167,7 +167,7 @@ homebrew_cask_apps:
   - balenaetcher
   - brave-browser
   # - busycal # bcl-2023.1.2 last version that supports 10.13
-  - busycontacts
+  # - busycontacts # bct-2023.1.1-2023-04-04-23-38 last version that supports 10.x
   # - chronycontrol # 3/22/23 doesn't start daemons correctly; go back to Apple's time
   # - cmake # don't install the cask
   - coconutbattery
@@ -190,6 +190,7 @@ homebrew_cask_apps:
   - gotomeeting
   # - grandperspective # 2.6.3 last version that supports 10.13 3/15/23
   - graphicconverter
+  - icollections
   - imazing
   - intellij-idea
   - istat-menus
@@ -235,9 +236,9 @@ homebrew_cask_apps:
   - veracrypt
   - vlc
   - vuescan
-  - webex
+  - webex # 6/18/23 43.6.x downloaded from web site linked with wrong libraries...use brew to update
   - whatroute
-  - whatsyoursign
+  # - whatsyoursign  # 5/26/23 v2.1 won't install
   - xquartz
   - xrg
   - youtube-to-mp3
