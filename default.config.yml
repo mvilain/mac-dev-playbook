@@ -107,7 +107,7 @@ homebrew_installed_packages:
   - oniguruma
   - openldap
   - openssl@1.1
-  # - openssl@3
+  - openssl@3
   - p7zip
   - pcre
   - pcre2
@@ -156,7 +156,9 @@ homebrew_cask_appdir: /Applications
 # the following apps have been updated beyond 10.13
 # and require at minimum Moneterrey (MacOSX 12)
 homebrew_cask_apps_13:
+  - 1passwword
   - alfred
+  - appcleaner
   - busycal # bcl-2023.1.2 last version that supports 10.13
   - busycontacts # bct-2023.1.1-2023-04-04-23-38 last version that supports 10.x
   - chronycontrol # 3/22/23 doesn't start daemons correctly; go back to Apple's time
@@ -164,7 +166,7 @@ homebrew_cask_apps_13:
   - grandperspective # 2.6.3 last version that supports 10.13 3/15/23
   - kdiff3 # 1.9.5 last version that supports 10.13 12/18/22
   - launchcontrol # 11/01/22 V2.0 runs on 10.14
-  # - mullvadvpn # 7/4/23 2023.4 says it only installs on BigSur+
+  - mullvadvpn # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
   - profind # 12/24/22 1.8 last version that supports 10.13
   - qlimagesize
@@ -172,6 +174,7 @@ homebrew_cask_apps_13:
   - torguard # 3/8/23 4.8.14 last version that supports 10.13; 4.8.15 installs 4.8.14 on 10.13; 4.8.16 just fails
   - typora # 3/8/23 1.5.8 last version that supports 10.13
   - vagrant # 10/26/22 2.3 doesn't run on 10.13 -- missing gem google-protobuf
+  - viscosity
   - whatsyoursign  # 5/26/23 v2.1 won't install
 
 # the following apps work on 10.13 as of 7/3/23
