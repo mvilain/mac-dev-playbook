@@ -130,6 +130,7 @@ homebrew_installed_packages:
   - telnetd
   - terraform-docs
   - terragrunt
+  - tldr
   - tnftp
   - tnftpd
   - tree
@@ -299,7 +300,6 @@ pip_packages:
   - six
   - Sphinx
   - sphinxcontrib-napoleon
-  - tldr
   - toml
   - typed-ast
   - typing-extensions
