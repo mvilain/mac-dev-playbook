@@ -66,6 +66,7 @@ for ver in python3.9; do
         astroid \
         certifi \
         cffi \
+        colorama \
         dill \
         entrypoints \
         filelock \
@@ -85,7 +86,10 @@ for ver in python3.9; do
         pytest \
         PyYAML \
         setuptools \
+        shtab \
         six \
+        termcolor \
+        tldr \
         toml \
         tomli \
         typed-ast \
@@ -129,6 +133,7 @@ ${ver} -m pip install --upgrade \
     setuptools \
     Sphinx sphinxcontrib-napoleon \
     six \
+    tldr \
     toml \
     typed-ast \
     typing-extensions \
