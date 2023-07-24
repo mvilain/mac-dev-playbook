@@ -161,7 +161,7 @@ homebrew_cask_apps_13:
   - appcleaner
   - busycal # bcl-2023.1.2 last version that supports 10.13
   - busycontacts # bct-2023.1.1-2023-04-04-23-38 last version that supports 10.x
-  - chronycontrol # 3/22/23 doesn't start daemons correctly; go back to Apple's time
+  # - chronycontrol # 7/22/23 1.4.10 doesn't start daemons correctly; go back to Apple's time
   - google-drive  # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - kdiff3 # 1.9.5 last version that supports 10.13 12/18/22
