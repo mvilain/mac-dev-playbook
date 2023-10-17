@@ -93,6 +93,7 @@ homebrew_installed_packages:
   - libusb
   - libyaml
   - logrotate
+  - lynx
   - lzip
   - m4
   # - mcrypt  10/28/22 deprecated
@@ -115,6 +116,7 @@ homebrew_installed_packages:
   - python@3.10
   - rbenv
   - rclone
+  - kapitainsky-rclone-browser
   - readline
   - rtmpdump
   - ruby-build
@@ -147,6 +149,7 @@ homebrew_installed_packages:
   - zstd
 
 homebrew_taps:
+  - buo/cask-upgrade
   - homebrew/core
   - homebrew/cask
   - hashicorp/tap
@@ -155,17 +158,18 @@ homebrew_cask_appdir: /Applications
 
 # the following apps have been updated beyond 10.13
 # and require at minimum Moneterrey (MacOSX 12)
-homebrew_cask_apps_13:
+homebrew_cask_apps_15:
   - 1passwword
   - alfred
   - appcleaner
-  - busycal # bcl-2023.1.2 last version that supports 10.13
+  - busycal      # bcl-2023.1.2 last version that supports 10.13
   - busycontacts # bct-2023.1.1-2023-04-04-23-38 last version that supports 10.x
-  # - chronycontrol # 7/22/23 1.4.10 doesn't start daemons correctly; go back to Apple's time
+  - calibre
+  - chronycontrol # 8/18/23 1.4.11 installs and starts daemons correctly
   - google-drive  # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - kdiff3 # 1.9.5 last version that supports 10.13 12/18/22
-  # - launchcontrol # 7/16/23 V2.0 runs on 11
+  - launchcontrol # 10/16/23 2.5 working
   - mullvadvpn # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
   - profind # 12/24/22 1.8 last version that supports 10.13
@@ -176,13 +180,12 @@ homebrew_cask_apps_13:
   - viscosity
   - whatsyoursign  # 5/26/23 v2.1 won't install
 
-# the following apps work on 10.13 as of 7/3/23
+# the following apps work on 10.15 as of 10/2/23
 homebrew_cask_apps:
   - 1password-cli
   - a-better-finder-attributes
   - a-better-finder-rename
   - anki
-  - another-redis-desktop-manager
   - app-tamer
   - audacity
   - audiobook-builder
@@ -191,6 +194,7 @@ homebrew_cask_apps:
   - brave-browser
   # - cmake # don't install the cask
   - coconutbattery
+  - commander-one
   - cyberduck
   - dbeaver-community
   - default-folder-x
@@ -201,7 +205,7 @@ homebrew_cask_apps:
   - exiftool
   - firefox
   - fliqlo
-  - forklift
+  # - forklift   # 3.5.8 permanent license; 9/6/2023 won't pay for 4.0 upgrade
   - github
   - gitup
   - google-chrome
@@ -218,7 +222,7 @@ homebrew_cask_apps:
   - keka
   - keyboard-maestro
   - knockknock
-  - macfuse
+  # - macfuse # prereq for Veracrypt and docker
   - mdimagesizemdimporter
   - mediahuman-youtube-downloader
   - meteorologist
@@ -241,7 +245,6 @@ homebrew_cask_apps:
   - the-unarchiver
   - tor-browser
   - usenapp
-  - veracrypt
   - vlc
   - vuescan
   - webex # 6/18/23 43.6.x downloaded from web site linked with wrong libraries...use brew to update
