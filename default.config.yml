@@ -179,6 +179,7 @@ homebrew_cask_apps_15:
   - vagrant # 10/26/22 2.3 doesn't run on 10.13 -- missing gem google-protobuf
   - viscosity
   - whatsyoursign  # 5/26/23 v2.1 won't install
+  - xrg            # 10/31/23 v3.2.1 runs on MacOS 11+
 
 # the following apps work on 10.15 as of 10/2/23
 homebrew_cask_apps:
@@ -250,7 +251,6 @@ homebrew_cask_apps:
   - webex # 6/18/23 43.6.x downloaded from web site linked with wrong libraries...use brew to update
   - whatroute
   - xquartz
-  - xrg
   - youtube-to-mp3
   - zenmap
   - zoom
