@@ -49,7 +49,7 @@ homebrew_installed_packages:
   - ca-certificates
   - cfssl
   - cmake
-  - cmake-docs
+  # - cmake-docs # 11/2/23 python-packaging won't compile python 3.12 version
   - coreutils
   - curl
   - dateutils
@@ -124,7 +124,7 @@ homebrew_installed_packages:
   # https://forge.rust-lang.org/infra/other-installation-methods.html
   # - rust # 3/16/23 use 'curl https://sh.rustup.rs -sSf | sh' instead of brew
   - six
-  - sphinx-doc
+  # - sphinx-doc   # 11/2/23 requires python-packages which won't install on 10.15
   - sqlite
   - ssh-copy-id
   - staticcheck
@@ -162,8 +162,6 @@ homebrew_cask_apps_15:
   - 1passwword
   - alfred
   - appcleaner
-  - busycal         # bcl-2023.1.2 last version that supports 10.13
-  - busycontacts    # bct-2023.1.1-2023-04-04-23-38 last version that supports 10.x
   - calibre
   - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
@@ -194,6 +192,8 @@ homebrew_cask_apps:
   - authy
   - balenaetcher
   - brave-browser
+  - busycal
+  - busycontacts
   # - cmake # don't install the cask
   - coconutbattery
   - commander-one
