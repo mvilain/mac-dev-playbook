@@ -46,6 +46,7 @@ homebrew_installed_packages:
   - bash
   - bison
   - brotli
+  - btop  # also installs isl, libmpc, gcc
   - ca-certificates
   - cfssl
   - cmake
@@ -59,6 +60,7 @@ homebrew_installed_packages:
   - envconsul
   - findutils
   - fping
+  - fzf
   - gawk
   - gdbm
   # https://github.com/prasmussen/gdrive/issues/663
