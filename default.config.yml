@@ -164,13 +164,13 @@ homebrew_cask_apps_15:
   - 1passwword
   - alfred
   - appcleaner
-  - calibre
+  # - calibre       # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - kdiff3          # 1.9.5 last version that supports 10.13 12/18/22
   - launchcontrol   # 10/16/23 2.5 working
-  - microsoft-teams # 10/31/23 new teams runs on BigSur+
+  # - microsoft-teams # 10/31/23 new teams runs on BigSur+ (don't bother with teams)
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
   - profind         # 12/24/22 1.8 last version that supports 10.13
