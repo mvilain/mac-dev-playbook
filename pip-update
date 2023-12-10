@@ -6,6 +6,7 @@
 # added python3.10 and 3.11 installed by brew 202211.05MeV
 # fix permissions on /usr/local/lib/python3.10/site-packages 202212.16
 # added python 3.10.11 as installed as system package 202304.08
+# added python 3.12 as installed by brew 202312.10
 
 [ $EUID -ne 0 ] && echo "not root" && exit
 
@@ -140,11 +141,11 @@ ${ver} -m pip install --upgrade \
     xattr \
     zipp
 
-for ver in python3.11; do
+for ver in python3.11 python3.12; do
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${ver}"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-  ${ver} -m pip install --upgrade certifi pip PyYAML setuptools six wheel virtualenv
+  ${ver} -m pip install --upgrade --break-system-packages certifi pip PyYAML setuptools six wheel virtualenv
   for d in /opt/homebrew/lib/${ver}/site-packages /usr/local/lib/${ver}/site-packages; do
     [ -e ${d} ] && sudo chown -R vilain:staff ${d}
   done

@@ -116,6 +116,8 @@ homebrew_installed_packages:
   - pkg-config
   - popt
   - python@3.10
+  - python@3.11
+  - python@3.12
   - rbenv
   - rclone
   - kapitainsky-rclone-browser
@@ -166,6 +168,7 @@ homebrew_cask_apps_15:
   - appcleaner
   # - calibre       # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
+  - forklift        # 12/2/23 4.0.5 installs on 12+
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - kdiff3          # 1.9.5 last version that supports 10.13 12/18/22
@@ -187,6 +190,9 @@ homebrew_cask_apps:
   - 1password-cli
   - a-better-finder-attributes
   - a-better-finder-rename
+  - affinity-designer
+  - affinity-photo
+  - affinity-publisherspek
   - anki
   - app-tamer
   - audacity
@@ -196,7 +202,6 @@ homebrew_cask_apps:
   - brave-browser
   - busycal
   - busycontacts
-  # - cmake # don't install the cask
   - coconutbattery
   - commander-one
   - cyberduck
@@ -209,7 +214,6 @@ homebrew_cask_apps:
   - exiftool
   - firefox
   - fliqlo
-  # - forklift   # 3.5.8 permanent license; 9/6/2023 won't pay for 4.0 upgrade
   - github
   - gitup
   - google-chrome
