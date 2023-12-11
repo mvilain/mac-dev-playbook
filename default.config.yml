@@ -67,6 +67,7 @@ homebrew_installed_packages:
   # - gdrive  2/1/2023 broken: google deprecated authetication method
   - gettext
   - git
+  - gitup
   - git-interactive-rebase-tool
   - glances
   - gmp
