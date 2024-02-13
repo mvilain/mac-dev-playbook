@@ -215,6 +215,7 @@ homebrew_cask_apps:
   - exiftool
   - firefox
   - fliqlo
+  - floorp
   - github
   - gitup
   - google-chrome
