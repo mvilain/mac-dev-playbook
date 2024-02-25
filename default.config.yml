@@ -83,6 +83,7 @@ homebrew_installed_packages:
   - helm
   - htop
   - intltool
+  - iproute2mac
   - jq
   - kops
   - kubernetes-cli
@@ -208,6 +209,7 @@ homebrew_cask_apps:
   - cyberduck
   - dbeaver-community
   - default-folder-x
+  - drawio
   - dropbox
   - easyfind
   - eloston-chromium
