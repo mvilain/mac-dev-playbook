@@ -49,6 +49,7 @@ homebrew_installed_packages:
   - btop  # also installs isl, libmpc, gcc
   - ca-certificates
   - cfssl
+  - cheat
   - cmake
   # - cmake-docs # 11/2/23 python-packaging won't compile python 3.12 version
   - coreutils
