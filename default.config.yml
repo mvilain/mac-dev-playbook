@@ -155,10 +155,11 @@ homebrew_installed_packages:
   - zstd
 
 homebrew_taps:
+  - 1password/tap
   - buo/cask-upgrade
+  - hashicorp/tap
   - homebrew/core
   - homebrew/cask
-  - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
 
@@ -169,7 +170,7 @@ homebrew_cask_apps_15:
   - alfred
   - appcleaner
   # - calibre       # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
-  - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
+  # - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
   - forklift        # 12/2/23 4.0.5 installs on 12+
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
