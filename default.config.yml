@@ -175,7 +175,6 @@ homebrew_cask_apps_15:
   - forklift        # 12/2/23 4.0.5 installs on 12+
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
-  - kdiff3          # 1.9.5 last version that supports 10.13 12/18/22
   - launchcontrol   # 10/16/23 2.5 working
   # - microsoft-teams # 10/31/23 new teams runs on BigSur+ (don't bother with teams)
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
