@@ -176,7 +176,6 @@ homebrew_cask_apps_15:
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
   # - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - launchcontrol   # 10/16/23 2.5 working
-  # - microsoft-teams # 10/31/23 new teams runs on BigSur+ (don't bother with teams)
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
   - profind         # 12/24/22 1.8 last version that supports 10.13
@@ -200,7 +199,7 @@ homebrew_cask_apps:
   - app-tamer
   - audacity
   - audiobook-builder
-  - authy
+  # - authy 3/19/24 authydesktop EOL; can install iOS on M1 instead w/ reduced Security
   - balenaetcher
   - brave-browser
   - busycal
