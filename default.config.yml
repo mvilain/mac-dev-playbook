@@ -118,7 +118,7 @@ homebrew_installed_packages:
   - pcre2
   - pkg-config
   - popt
-  - python@3.10
+  # - python@3.10  # 4/3/24 python3.10 installed via MacOS
   - python@3.11
   - python@3.12
   - rbenv
@@ -199,7 +199,7 @@ homebrew_cask_apps:
   - app-tamer
   - audacity
   - audiobook-builder
-  # - authy 3/19/24 authydesktop EOL; can install iOS on M1 instead w/ reduced Security
+  # - authy3/19/24 authy desktop EOL; can install iOS on M1 instead w/ Reduced Security
   - balenaetcher
   - brave-browser
   - busycal
@@ -221,6 +221,7 @@ homebrew_cask_apps:
   - github
   - gitup
   - google-chrome
+  - google-cloud-sdk
   - google-web-designer
   - go2shell
   - gotomeeting
@@ -243,10 +244,15 @@ homebrew_cask_apps:
   - nvalt
   - opera
   - pacifist
+  - protonmail-bridge
+  - proton-drive
+  - proton-mail
+  - protonvpn
   - rar
   - scrivener
   - skype
   - sloth
+  - smartmontools
   - sublime-merge
   - sublime-text
   - superduper
