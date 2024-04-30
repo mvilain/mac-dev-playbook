@@ -78,7 +78,6 @@ homebrew_installed_packages:
   - hashicorp/tap/consul
   - hashicorp/tap/nomad
   - hashicorp/tap/packer
-  - hashicorp/tap/terraform
   - hashicorp/tap/vault
   - hashicorp/tap/waypoint
   - helm
@@ -111,6 +110,7 @@ homebrew_installed_packages:
   - nmap
   - oniguruma
   - openldap
+  - opentofu  # 4/30/24 replacement for terraform
   - openssl@1.1
   - openssl@3
   - p7zip
@@ -137,7 +137,6 @@ homebrew_installed_packages:
   - staticcheck
   - telnet
   - telnetd
-  - terraform-docs
   - terragrunt
   - tldr
   - tnftp
@@ -149,7 +148,6 @@ homebrew_installed_packages:
   - webp
   - wget
   - xz
-  - zsh
   - zsh-syntax-highlighting
   - zsh-autosuggestions
   - zsh
