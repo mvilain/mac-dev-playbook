@@ -135,6 +135,7 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - staticcheck
+  - superfile
   - telnet
   - telnetd
   - terragrunt
@@ -143,7 +144,6 @@ homebrew_installed_packages:
   - tnftpd
   - tree
   - utf8proc
-  - vagrant-completion
   - watch
   - webp
   - wget
