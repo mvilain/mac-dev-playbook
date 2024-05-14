@@ -72,6 +72,7 @@ homebrew_installed_packages:
   - git-interactive-rebase-tool
   - glances
   - gmp
+  - gnupg2
   - go
   - go-bindata
   - hashicorp/tap/boundary
@@ -103,6 +104,7 @@ homebrew_installed_packages:
   # - mcrypt  10/28/22 deprecated
   - mhash
   - minikube
+  - mutt
   - mpdecimal
   - mpfr
   - ncurses
@@ -117,7 +119,9 @@ homebrew_installed_packages:
   - pcre
   - pcre2
   - pkg-config
+  - pinentry
   - popt
+  - pstree
   # - python@3.10  # 4/3/24 python3.10 installed via MacOS
   - python@3.11
   - python@3.12
