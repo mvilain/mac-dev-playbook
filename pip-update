@@ -7,6 +7,7 @@
 # fix permissions on /usr/local/lib/python3.10/site-packages 202212.16
 # added python 3.10.11 as installed as system package 202304.08
 # added python 3.12 as installed by brew 202312.10
+# added pynvim 202405.30
 
 [ $EUID -ne 0 ] && echo "not root" && exit
 
@@ -83,6 +84,7 @@ for ver in python3.9; do
         pycparser \
         pyflakes \
         pylint \
+        pynvim \
         pytest \
         PyYAML \
         setuptools \
@@ -127,6 +129,7 @@ ${ver} -m pip install --upgrade \
     pycparser \
     pyflakes \
     pylint \
+    pynvim \
     setuptools \
     Sphinx sphinxcontrib-napoleon \
     six \

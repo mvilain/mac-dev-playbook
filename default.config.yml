@@ -64,8 +64,6 @@ homebrew_installed_packages:
   - fzf
   - gawk
   - gdbm
-  # https://github.com/prasmussen/gdrive/issues/663
-  # - gdrive  2/1/2023 broken: google deprecated authetication method
   - gettext
   - git
   - gitup
@@ -167,16 +165,14 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 
 # the following apps have been updated beyond 10.13
-# and require at minimum Moneterrey (MacOSX 12)
-homebrew_cask_apps_15:
+# and require at minimum MacOS 10.15 (Catalina)
+homebrew_cask_apps_1015:
   - 1passwword
   - alfred
   - appcleaner
-  # - calibre       # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   # - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
   - forklift        # 12/2/23 4.0.5 installs on 12+
   - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
-  # - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - launchcontrol   # 10/16/23 2.5 working
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
@@ -187,7 +183,18 @@ homebrew_cask_apps_15:
   - vagrant         # 10/26/22 2.3 doesn't run on 10.13 -- missing gem google-protobuf
   - viscosity
   - whatsyoursign   # 5/26/23 v2.1 won't install
+
+# since brew won't allow cask versions, use this to limit what can be installed
+# packages that only run on MacOS Ventura or later
+homebrew_cask_apps_12:
+  - awscli
+  - calibre # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
+  - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - xrg             # 10/31/23 v3.2.1 runs on BigSur+
+
+# packages that only run on MacOS Sonoma or later
+homebrew_cask_apps_13:
+  - carbon-copy-cloner    # 5/23/24 7.x only runs on Sonoma
 
 # the following apps work on 10.15 as of 10/2/23
 homebrew_cask_apps:
@@ -368,7 +375,7 @@ sublime_package_control:
   - "Theme - Brogrammer"
   - "Theme - Monokai Pro"
   - "TrailingSpaces"
-  - "Typora Markdown App (OSX)"
+  # - "Typora Markdown App (OSX)"
   - "WordCount"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
