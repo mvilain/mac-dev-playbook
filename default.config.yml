@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - automake
   - bash
   - bison
+  - bitwarden-cli
   - brotli
   - btop  # also installs isl, libmpc, gcc
   - ca-certificates
@@ -127,6 +128,7 @@ homebrew_installed_packages:
   - rclone
   - kapitainsky-rclone-browser
   - readline
+  - ripgrep
   - rtmpdump
   - ruby-build
   # - ruby@2.7 # 5/15/23 ruby@2.7 deprecated
@@ -188,9 +190,10 @@ homebrew_cask_apps_1015:
 # packages that only run on MacOS Ventura or later
 homebrew_cask_apps_12:
   - awscli
-  - calibre # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
+  # - bartender        # 6/5/24 application sold to questionable company...use 5.0.48
+  - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
-  - xrg             # 10/31/23 v3.2.1 runs on BigSur+
+  - xrg              # 10/31/23 v3.2.1 runs on BigSur+
 
 # packages that only run on MacOS Sonoma or later
 homebrew_cask_apps_13:
@@ -236,6 +239,7 @@ homebrew_cask_apps:
   - gotomeeting
   - graphicconverter
   - icollections
+  - idrive
   - imazing
   - intellij-idea
   - istat-menus
