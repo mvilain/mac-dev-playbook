@@ -174,8 +174,6 @@ homebrew_cask_apps_1015:
   - appcleaner
   # - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
   - forklift        # 12/2/23 4.0.5 installs on 12+
-  - google-drive    # 10/19/22 discontinued 10.13 support on 10/21/22
-  - launchcontrol   # 10/16/23 2.5 working
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
   - profind         # 12/24/22 1.8 last version that supports 10.13
@@ -193,6 +191,8 @@ homebrew_cask_apps_12:
   # - bartender        # 6/5/24 application sold to questionable company...use 5.0.48
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
+  - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
+  - launchcontrol    # 6/7/24 discontinued 10.15 support
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
 
 # packages that only run on MacOS Sonoma or later
