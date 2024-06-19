@@ -166,7 +166,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 
-# the following apps have been updated beyond 10.13
+# the following casks have been updated beyond 10.13
 # and require at minimum MacOS 10.15 (Catalina)
 homebrew_cask_apps_1015:
   - 1passwword
@@ -185,7 +185,7 @@ homebrew_cask_apps_1015:
   - whatsyoursign   # 5/26/23 v2.1 won't install
 
 # since brew won't allow cask versions, use this to limit what can be installed
-# packages that only run on MacOS Ventura or later
+# casks that only run on MacOS Ventura or later
 homebrew_cask_apps_12:
   - awscli
   # - bartender        # 6/5/24 application sold to questionable company...use 5.0.48
@@ -195,11 +195,13 @@ homebrew_cask_apps_12:
   - launchcontrol    # 6/7/24 discontinued 10.15 support
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
 
-# packages that only run on MacOS Sonoma or later
+# casks that only run on MacOS Sonoma or later
 homebrew_cask_apps_13:
+  - authy                 # can install iOS on M1 instead w/ Reduced Security
   - carbon-copy-cloner    # 5/23/24 7.x only runs on Sonoma
+  - google-cloud-sdk      # 6/19/24 481 only works on Sonoma
 
-# the following apps work on 10.15 as of 10/2/23
+# the following casks work on 10.15 as of 10/2/23
 homebrew_cask_apps:
   - 1password-cli
   - a-better-finder-attributes
@@ -211,7 +213,7 @@ homebrew_cask_apps:
   - app-tamer
   - audacity
   - audiobook-builder
-  # - authy3/19/24 authy desktop EOL; can install iOS on M1 instead w/ Reduced Security
+  # - authy 3/19/24 authy desktop EOL
   - balenaetcher
   - brave-browser
   - busycal
@@ -233,7 +235,6 @@ homebrew_cask_apps:
   - github
   - gitup
   - google-chrome
-  - google-cloud-sdk
   - google-web-designer
   - go2shell
   - gotomeeting
@@ -248,7 +249,6 @@ homebrew_cask_apps:
   - keka
   - keyboard-maestro
   - knockknock
-  # - macfuse # prereq for Veracrypt and docker
   - mdimagesizemdimporter
   - mediahuman-youtube-downloader
   - meteorologist
