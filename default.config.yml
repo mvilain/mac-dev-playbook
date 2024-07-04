@@ -71,7 +71,10 @@ homebrew_installed_packages:
   - git-interactive-rebase-tool
   - glances
   - gmp
-  - gnupg2
+  - gpg
+  - gpg2
+  - gpg-tui
+  - gpgme
   - go
   - go-bindata
   - hashicorp/tap/boundary
@@ -119,6 +122,7 @@ homebrew_installed_packages:
   - pcre2
   - pkg-config
   - pinentry
+  - pinentry-mac
   - popt
   - pstree
   # - python@3.10  # 4/3/24 python3.10 installed via MacOS
@@ -140,10 +144,7 @@ homebrew_installed_packages:
   - ssh-copy-id
   - staticcheck
   - superfile
-  - telnet
-  - telnetd
   - terragrunt
-  - tldr
   - tnftp
   - tnftpd
   - tree
@@ -191,6 +192,7 @@ homebrew_cask_apps_12:
   # - bartender        # 6/5/24 application sold to questionable company...use 5.0.48
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
+  - google-cloud-sdk # 6/19/24 481 works on monterrey if ~/.config/gcloud/virtenv is cleared first
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
   - launchcontrol    # 6/7/24 discontinued 10.15 support
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
@@ -199,7 +201,6 @@ homebrew_cask_apps_12:
 homebrew_cask_apps_13:
   - authy                 # can install iOS on M1 instead w/ Reduced Security
   - carbon-copy-cloner    # 5/23/24 7.x only runs on Sonoma
-  - google-cloud-sdk      # 6/19/24 481 only works on Sonoma
 
 # the following casks work on 10.15 as of 10/2/23
 homebrew_cask_apps:
@@ -263,6 +264,7 @@ homebrew_cask_apps:
   - protonvpn
   - rar
   - scrivener
+  - python-setuptools
   - skype
   - sloth
   - smartmontools
@@ -332,6 +334,7 @@ pip_packages:
   - six
   - Sphinx
   - sphinxcontrib-napoleon
+  - tldr
   - toml
   - typed-ast
   - typing-extensions
