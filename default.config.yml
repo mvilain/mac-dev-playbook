@@ -81,7 +81,7 @@ homebrew_installed_packages:
   - hashicorp/tap/consul
   - hashicorp/tap/nomad
   - hashicorp/tap/packer
-  - hashicorp/tap/vault
+  - hashicorp/tap/vault    # use openbao on Ventura+
   - hashicorp/tap/waypoint
   - helm
   - htop
@@ -194,6 +194,7 @@ homebrew_cask_apps_12:
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - google-cloud-sdk # 6/19/24 481 works on monterrey if ~/.config/gcloud/virtenv is cleared first
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
+  - openbao   # 7/14/24 replacement for vault
   - launchcontrol    # 6/7/24 discontinued 10.15 support
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
 
@@ -234,7 +235,6 @@ homebrew_cask_apps:
   - fliqlo
   - floorp
   - github
-  - gitup
   - google-chrome
   - google-web-designer
   - go2shell
