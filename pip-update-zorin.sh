@@ -83,7 +83,7 @@ for ver in /usr/bin/python3; do
      packaging \
      paramiko \
      pathspec \
-     pbr \
+     "pbr<2.0" \
      pefile \
      pexpect \
      Pillow \
