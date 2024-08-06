@@ -189,13 +189,15 @@ homebrew_cask_apps_1015:
 # casks that only run on MacOS Ventura or later
 homebrew_cask_apps_12:
   - awscli
-  # - bartender        # 6/5/24 application sold to questionable company...use 5.0.48
+  # - bartender      # 6/5/24 application sold to questionable company...use 5.0.48
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - google-cloud-sdk # 6/19/24 481 works on monterrey if ~/.config/gcloud/virtenv is cleared first
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
-  - openbao   # 7/14/24 replacement for vault
+  - istat-menus      # 7/31/24 7.x version runs on 11+; use istat-menus@6 cask for 10.15
   - launchcontrol    # 6/7/24 discontinued 10.15 support
+  - obs              # 7/23/24 runs on 11+
+  - openbao          # 7/14/24 replacement for vault
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
 
 # casks that only run on MacOS Sonoma or later
@@ -241,10 +243,9 @@ homebrew_cask_apps:
   - gotomeeting
   - graphicconverter
   - icollections
-  - idrive
   - imazing
   - intellij-idea
-  - istat-menus
+  - istat-menus@6
   - jitsi-meet
   - joplin
   - keka
@@ -264,7 +265,6 @@ homebrew_cask_apps:
   - protonvpn
   - rar
   - scrivener
-  - python-setuptools
   - skype
   - sloth
   - smartmontools
