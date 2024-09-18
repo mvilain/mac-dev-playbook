@@ -77,12 +77,12 @@ homebrew_installed_packages:
   - gpgme
   - go
   - go-bindata
-  - hashicorp/tap/boundary
-  - hashicorp/tap/consul
-  - hashicorp/tap/nomad
-  - hashicorp/tap/packer
-  - hashicorp/tap/vault    # use openbao on Ventura+
-  - hashicorp/tap/waypoint
+  # - hashicorp/tap/boundary  # 9/17/24 deprecated due to license change
+  # - hashicorp/tap/consul    # 9/17/24 deprecated due to license change
+  # - hashicorp/tap/nomad     # 9/17/24 deprecated due to license change
+  # - hashicorp/tap/packer    # 9/17/24 deprecated due to license change
+  # - hashicorp/tap/vault     # use openbao on Ventura+ 9/17/24
+  # - hashicorp/tap/waypoint  # 9/17/24 deprecated due to license change
   - helm
   - htop
   - intltool
@@ -193,6 +193,7 @@ homebrew_cask_apps_12:
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
   - google-cloud-sdk # 6/19/24 481 works on monterrey if ~/.config/gcloud/virtenv is cleared first
+  - google-chrome    # 9/17/24 chrome < 129 won't run on 10.15
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
   - istat-menus      # 7/31/24 7.x version runs on 11+; use istat-menus@6 cask for 10.15
   - launchcontrol    # 6/7/24 discontinued 10.15 support
@@ -237,7 +238,6 @@ homebrew_cask_apps:
   - fliqlo
   - floorp
   - github
-  - google-chrome
   - google-web-designer
   - go2shell
   - gotomeeting
