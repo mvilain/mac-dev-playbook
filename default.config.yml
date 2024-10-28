@@ -44,6 +44,7 @@ homebrew_installed_packages:
   - autoconf-archive
   - automake
   - bash
+  - binsider
   - bison
   - bitwarden-cli
   - brotli
@@ -55,6 +56,7 @@ homebrew_installed_packages:
   # - cmake-docs # 11/2/23 python-packaging won't compile python 3.12 version
   - coreutils
   - curl
+  - cyme
   - dateutils
   - dc3dd
   - docker-machine
@@ -99,6 +101,7 @@ homebrew_installed_packages:
   - libunistring
   - libusb
   - libyaml
+  - lnav
   - logrotate
   - lynx
   - lzip
