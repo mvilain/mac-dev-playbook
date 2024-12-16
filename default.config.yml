@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - dc3dd
   - docker-machine
   - docutils
+  - electerm
   - envconsul
   - findutils
   - fping
@@ -79,12 +80,6 @@ homebrew_installed_packages:
   - gpgme
   - go
   - go-bindata
-  # - hashicorp/tap/boundary  # 9/17/24 deprecated due to license change
-  # - hashicorp/tap/consul    # 9/17/24 deprecated due to license change
-  # - hashicorp/tap/nomad     # 9/17/24 deprecated due to license change
-  # - hashicorp/tap/packer    # 9/17/24 deprecated due to license change
-  # - hashicorp/tap/vault     # use openbao on Ventura+ 9/17/24
-  # - hashicorp/tap/waypoint  # 9/17/24 deprecated due to license change
   - helm
   - htop
   - intltool
@@ -132,7 +127,9 @@ homebrew_installed_packages:
   # - python@3.10  # 4/3/24 python3.10 installed via MacOS
   - python@3.11
   - python@3.12
+  - python@3.13
   - rbenv
+  - re2c        # 11/29/24 or php 8.4+ compile/install since brew's php requires broken stuff
   - rclone
   - kapitainsky-rclone-browser
   - readline
