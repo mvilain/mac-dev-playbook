@@ -180,6 +180,7 @@ homebrew_cask_apps_1015:
   - forklift        # 12/2/23 4.0.5 installs on 12+
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
+  # - opera           # 11/21/24 V114.0.5282.222 last version supports 10.15
   - profind         # 12/24/22 1.8 last version that supports 10.13
   - steermouse      # 10/19/22 5.6 last version that supports 10.13
   - torguard        # 3/8/23 4.8.14 supports 10.13; 4.8.15 installs 4.8.14 on 10.13; 4.8.16 just fails
@@ -195,7 +196,7 @@ homebrew_cask_apps_12:
   # - bartender      # 6/5/24 application sold to questionable company...use 5.0.48
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
-  - google-cloud-sdk # 6/19/24 481 works on monterrey if ~/.config/gcloud/virtenv is cleared first
+  - google-cloud-sdk # 6/19/24 4op81 works on monterrey if ~/.config/gcloud/virtenv is cleared first
   - google-chrome    # 9/17/24 chrome < 129 won't run on 10.15
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
   - istat-menus      # 7/31/24 7.x version runs on 11+; use istat-menus@6 cask for 10.15
@@ -260,7 +261,6 @@ homebrew_cask_apps:
   - neofinder
   - ngrok
   # - nvalt     # 8/7/24 package deprecated; installed by hand
-  - opera
   - pacifist
   - protonmail-bridge
   - proton-drive
