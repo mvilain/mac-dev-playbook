@@ -69,7 +69,6 @@ homebrew_installed_packages:
   - gawk
   - gdbm
   - gettext
-  - git
   - gitup
   - git-interactive-rebase-tool
   - glances
@@ -194,6 +193,7 @@ homebrew_cask_apps_12:
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - drawio           # 1/8/25 V25.0.3 runs on MacOS 10.15; V26+ runs on 11+
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
+  - git                   # 2.48 won't install on 10.15
   - google-cloud-sdk # 6/19/24 4op81 works on monterrey if ~/.config/gcloud/virtenv is cleared first
   - google-chrome    # 9/17/24 chrome < 129 won't run on 10.15
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
