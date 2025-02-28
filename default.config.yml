@@ -169,7 +169,6 @@ homebrew_cask_appdir: /Applications
 # the following casks have been updated beyond 10.13
 # and require at minimum MacOS 10.15 (Catalina)
 homebrew_cask_apps_1015:
-  - 1passwword
   - alfred
   - appcleaner
   # - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
@@ -188,12 +187,14 @@ homebrew_cask_apps_1015:
 # since brew won't allow cask versions, use this to limit what can be installed
 # casks that only run on MacOS Ventura or later
 homebrew_cask_apps_12:
+  - 1passwword       # 2/19/25 8.10.60 last version for 10.15+
   - awscli
   # - bartender      # 6/5/24 application sold to questionable company...use 5.0.48
+  - bitwarden        # 1/20/25 2025.x only works on 11+
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - drawio           # 1/8/25 V25.0.3 runs on MacOS 10.15; V26+ runs on 11+
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
-  - git                   # 2.48 won't install on 10.15
+  - git              # 2.48 won't install on 10.15
   - google-cloud-sdk # 6/19/24 4op81 works on monterrey if ~/.config/gcloud/virtenv is cleared first
   - google-chrome    # 9/17/24 chrome < 129 won't run on 10.15
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
@@ -201,6 +202,7 @@ homebrew_cask_apps_12:
   - launchcontrol    # 6/7/24 discontinued 10.15 support
   - obs              # 7/23/24 runs on 11+
   - openbao          # 7/14/24 replacement for vault
+  - typora           # 2/19/25 1.9.4 runs on 11+
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
 
 # casks that only run on MacOS Sonoma or later
@@ -282,6 +284,7 @@ homebrew_cask_apps:
   - webex # 6/18/23 43.6.x downloaded from web site linked with wrong libraries...use brew to update
   - whatroute
   - xquartz
+  - yate
   - youtube-to-mp3
   - zenmap
   - zoom
