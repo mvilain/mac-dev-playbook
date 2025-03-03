@@ -284,7 +284,6 @@ homebrew_cask_apps:
   - webex # 6/18/23 43.6.x downloaded from web site linked with wrong libraries...use brew to update
   - whatroute
   - xquartz
-  - yate
   - youtube-to-mp3
   - zenmap
   - zoom
