@@ -48,7 +48,6 @@ homebrew_installed_packages:
   - bison
   - bitwarden-cli
   - brotli
-  - btop  # also installs isl, libmpc, gcc
   - ca-certificates
   - cfssl
   - cheat
@@ -191,6 +190,7 @@ homebrew_cask_apps_12:
   - awscli
   # - bartender      # 6/5/24 application sold to questionable company...use 5.0.48
   - bitwarden        # 1/20/25 2025.x only works on 11+
+  - btop             # 3/10/25 won't install on 10.15, compiles with errors; also installs isl, libmpc, gcc
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - drawio           # 1/8/25 V25.0.3 runs on MacOS 10.15; V26+ runs on 11+
   - grandperspective # 3.3 last version that supports 10.15 7/16/23
