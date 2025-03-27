@@ -172,6 +172,7 @@ homebrew_cask_apps_1015:
   - appcleaner
   # - chronycontrol   # 8/18/23 1.4.11 installs and starts daemons correctly
   - forklift        # 12/2/23 4.0.5 installs on 12+
+  - keycastr        # 3/27/25 installs on 10.15
   - mullvadvpn      # 7/4/23 2023.4 says it only installs on BigSur+
   - netiquette
   # - opera           # 11/21/24 V114.0.5282.222 last version supports 10.15
@@ -190,6 +191,7 @@ homebrew_cask_apps_12:
   - awscli
   # - bartender      # 6/5/24 application sold to questionable company...use 5.0.48
   - bitwarden        # 1/20/25 2025.x only works on 11+
+  - bitwarden-cli    # 3/13/24 2025.2.0 requires node 23.9+ which requires 12+
   - btop             # 3/10/25 won't install on 10.15, compiles with errors; also installs isl, libmpc, gcc
   - calibre          # 11/17/23 7.0 on 12+, 6.29 on Ventura, 6.11 on Catalina
   - drawio           # 1/8/25 V25.0.3 runs on MacOS 10.15; V26+ runs on 11+
@@ -210,6 +212,8 @@ homebrew_cask_apps_12:
 homebrew_cask_apps_13:
   - authy                 # can install iOS on M1 instead w/ Reduced Security
   - carbon-copy-cloner    # 5/23/24 7.x only runs on Sonoma
+  # 3/13/25 23.9 won't install on 11+ w/brew
+  # https://stackoverflow.com/questions/28017374/what-is-the-recommended-way-to-install-node-js-nvm-and-npm-on-macos-x
 
 # the following casks work on 10.15 as of 10/2/23
 homebrew_cask_apps:
