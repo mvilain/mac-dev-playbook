@@ -9,9 +9,9 @@
 # added python 3.12 as installed by brew 202312.10
 # added pynvim 202405.30
 # added python3.13 2412.25
+# removed setuptools from 3.12+3.13 as brew installs it
 
 [ $EUID -ne 0 ] && echo "not root" && exit
-
 
 # echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 # echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) python2.7"
@@ -151,7 +151,7 @@ for ver in python3.11 python3.12 python3.13; do
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> $(date) ${ver}"
   echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-  ${ver} -m pip install --upgrade --break-system-packages certifi pip PyYAML setuptools six wheel virtualenv
+  ${ver} -m pip install --upgrade --break-system-packages certifi pip PyYAML six wheel virtualenv
   for d in /opt/homebrew/lib/${ver}/site-packages /usr/local/lib/${ver}/site-packages; do
     [ -e ${d} ] && sudo chown -R vilain:staff ${d}
   done
