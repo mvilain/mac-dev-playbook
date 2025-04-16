@@ -162,6 +162,7 @@ homebrew_taps:
   - buo/cask-upgrade
   - homebrew/core
   - homebrew/cask
+  - kanriapp/cask
 
 homebrew_cask_appdir: /Applications
 
@@ -202,6 +203,7 @@ homebrew_cask_apps_12:
   - google-chrome    # 9/17/24 chrome < 129 won't run on 10.15
   - google-drive     # 6/7/24 91.0.2 last version that runs on catalina
   - istat-menus      # 7/31/24 7.x version runs on 11+; use istat-menus@6 cask for 10.15
+  - kanri            # 4/16/25 0.8.1 kanban app
   - launchcontrol    # 6/7/24 discontinued 10.15 support
   - obs              # 7/23/24 runs on 11+
   - openbao          # 7/14/24 replacement for vault
