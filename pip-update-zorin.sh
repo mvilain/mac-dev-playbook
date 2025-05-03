@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 # update zorin's python3 libraries to local environment 202407.03MeV
 # remove duplicity which now uses pipx 202408.05MeV
+# remove setuptools which is installed via apt 202505.03MeV
 
 # should NOT be run as root; should update ~/.local/bin instead
 [ $EUID -eq 0 ] && echo "should not be run as root" && exit
@@ -106,7 +107,6 @@ for ver in /usr/bin/python3; do
      ruamel.yaml ruamel.yaml.clib \
      SecretStorage \
      selinux \
-     setuptools \
      simplejson \
      six \
      Sphinx sphinxcontrib-napoleon \
