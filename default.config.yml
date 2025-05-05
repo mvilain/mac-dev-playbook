@@ -148,6 +148,7 @@ homebrew_installed_packages:
   - tnftpd
   - tree
   - utf8proc
+  - virtualenv
   - watch
   - webp
   - wget
