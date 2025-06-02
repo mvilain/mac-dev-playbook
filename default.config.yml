@@ -82,7 +82,7 @@ homebrew_installed_packages:
   - htop
   - intltool
   - iproute2mac
-  - jq
+  # - jq    # 6/1/25 1.8 won't install on 10.15; download from https://jqlang.org/download/
   - kops
   - kubernetes-cli
   - libevent
