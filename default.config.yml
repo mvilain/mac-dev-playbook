@@ -281,7 +281,7 @@ homebrew_cask_apps:
   - sublime-merge
   - sublime-text
   - superduper
-  - sync
+  # - sync        # 6/18/25 2.2.48 stops working; withdrawn 2.2.50.1 installed
   - Taskexplorer
   - tg-pro
   - the-unarchiver
