@@ -5,7 +5,7 @@
 
 # should NOT be run as root; should update ~/.local/bin instead
 [ $EUID -eq 0 ] && echo "should not be run as root" && exit
- 
+
 for ver in /usr/bin/python3; do
   if [ -e $ver ]; then
     echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
