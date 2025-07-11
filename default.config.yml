@@ -217,10 +217,17 @@ homebrew_cask_apps_12:
 homebrew_cask_apps_13:
   - authy                 # can install iOS on M1 instead w/ Reduced Security
   - carbon-copy-cloner    # 5/23/24 7.x only runs on Sonoma
-  # 3/13/25 23.9 won't install on 11+ w/brew
+  - node                  # 3/13/25 23.11.1 won't install on 11+ w/brew
   # https://stackoverflow.com/questions/28017374/what-is-the-recommended-way-to-install-node-js-nvm-and-npm-on-macos-x
 
-# the following casks work on 10.15 as of 10/2/23
+homebrew_cask_apps_14:
+  - audio-hijack          # requires 14.5+
+  - carbon-copy-cloner    # 5/23/24 7.x only runs on Sonoma
+  - node                  # 3/13/25 24.x won't install on 11+ w/brew
+  # https://stackoverflow.com/questions/28017374/what-is-the-recommended-way-to-insta
+
+# following casks work on 10.15 as of  10-Jul-2025 8:27PM
+#
 homebrew_cask_apps:
   - 1password-cli
   - a-better-finder-attributes
