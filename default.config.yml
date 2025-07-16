@@ -142,7 +142,6 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - staticcheck
-  - superfile
   - terragrunt
   - tnftp
   - tnftpd
