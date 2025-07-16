@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
-ver=$1
-${rel:="0"}
+ver=${1%.*}     # strip subversion from version.subversion
+rel=${1##*.}    # strip version from version.subversion
 
-if [[ -z $ver ]]; then
-  echo "usage: $0 [version] [rel]"
+if [[ -z $ver || -z $rel ]]; then
+  echo "usage: $0 [version.subversion]"
   exit
 fi
-
-# https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86/alpine-standard-3.21.3-x86.iso
 
 home_dir=https://alpinelinux.org/downloads/
 dir=https://dl-cdn.alpinelinux.org/alpine/v${ver}/releases
