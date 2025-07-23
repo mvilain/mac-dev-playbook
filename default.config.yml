@@ -206,6 +206,9 @@ homebrew_cask_apps_12:
   - istat-menus      # 7/31/24 7.x version runs on 11+; use istat-menus@6 cask for 10.15
   - kanri            # 4/16/25 0.8.1 kanban app
   - launchcontrol    # 6/7/24 discontinued 10.15 support
+  - llvm             # won't compile
+  - qsv              # 7/23/25 requires llvm+rust which don't run on 10.15; use https://github.com/dathere/qsv/
+  - rust
   - obs              # 7/23/24 runs on 11+
   - openbao          # 7/14/24 replacement for vault
   - typora           # 2/19/25 1.9.4 runs on 11+
