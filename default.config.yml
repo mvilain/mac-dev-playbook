@@ -109,11 +109,11 @@ homebrew_installed_packages:
   - ncurses
   - nginx
   - nmap
+  - nvm             # 7/23/25 standardize node.js environment
   - oniguruma
   - openldap
-  - opentofu  # 4/30/24 replacement for terraform
+  - opentofu        # 4/30/24 replacement for terraform
   - openssl@1.1
-  - openssl@3
   - p7zip
   - pcre
   - pcre2
@@ -122,7 +122,7 @@ homebrew_installed_packages:
   - pinentry-mac
   - popt
   - pstree
-  # - python@3.10  # 4/3/24 python3.10 installed via MacOS
+  # - python@3.10  # 4/3/24 python3.10 installed via MacOS installer
   - python@3.11
   - python@3.12
   - python@3.13
@@ -211,6 +211,7 @@ homebrew_cask_apps_12:
   - rust
   - obs              # 7/23/24 runs on 11+
   - openbao          # 7/14/24 replacement for vault
+  - openssl@3        # 7/23/25 won't compile on 10.15
   - typora           # 2/19/25 1.9.4 runs on 11+
   - vivaldi          # 4/7/25 7.6.3 runs on 11+
   - xrg              # 10/31/23 v3.2.1 runs on BigSur+
